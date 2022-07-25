@@ -111,27 +111,28 @@ void delete()
   7 8
   
   Using malloc
+#include<stdio.h>
 #include<stdlib.h>
 int main()
 {
     int i,n;
     printf("enter the number of val");
-    scanf("%d",n);
-    int *ptr=(int*)
+    scanf("%d",&n);
+    int *ptr=(int*)malloc(n*sizeof(int));
+    if(ptr==NULL)
+    {
         printf("memory is not allocated");
         exit (1);
     }
     for(i=0;i<n;i++)
     {
-        printf("malloc(n*sizeof(int));
-    if(ptr==NULL)
-    {
-enter a val");
+        printf ("enter a val");
         scanf("%d",ptr+i);
     }
     for(i=0;i<n;i++)
     {
-        printf("%d |",*(ptr+i));
+        printf("%d ",*(ptr+i));
+     }
     return 0;
     }
 
