@@ -109,4 +109,47 @@ void delete()
   enter choice:0
   7 9 8 enter the element to be deleted:9
   7 8
+  
+  Using malloc
+#include<stdlib.h>
+int main()
+{
+    int i,n;
+    printf("enter the number of val");
+    scanf("%d",n);
+    int *ptr=(int*)
+        printf("memory is not allocated");
+        exit (1);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("malloc(n*sizeof(int));
+    if(ptr==NULL)
+    {
+enter a val");
+        scanf("%d",ptr+i);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%d |",*(ptr+i));
+    return 0;
+    }
+
+
+Dangling pointer
+#include <stdio.h>
+int*fun()
+{
+    int num=10;
+    return &num;
+}
+int main(){
+    int *ptr=NULL;
+    ptr=fun();
+    printf("%d",*ptr);
+    return 0;
+
+}
+   
+
 
