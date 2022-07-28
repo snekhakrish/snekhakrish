@@ -151,6 +151,50 @@ int main(){
     return 0;
 
 }
-   
+   /******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include<stdio.h>
+#include<string.h>
+struct student {
+    
+    int rollno,tamil,english,maths;
+    char name[10];
+};
+int main(){
+    int i;
+    struct student a[5];
+
+    for(i=0;i<5;i++){
+    printf("enter the student rollno");
+    scanf("%d",&a[i].rollno);
+    printf("enter the student name");
+    scanf("%s",&a[i].name);
+    printf("tamil mark");
+    scanf("%d",&a[i].tamil);
+    printf("english");
+    scanf("%d",&a[i].english);
+    printf("maths");
+    scanf("%d",&a[i].maths);
+
+}
+for(i=0;i<5;i++){
+    printf("%d",a[i].rollno);
+    printf("%s",a[i].name);
+    printf("%d",a[i].tamil);
+    printf("%d",a[i].english);
+    printf("%d",a[i].maths);
+    
+}
+return 0;
+    
+}
+}
+    
+
 
 
